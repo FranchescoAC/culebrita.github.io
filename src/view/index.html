@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culebrita UCE</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Culebrita UCE</h1>
+        <div class="score-container">
+            <p>Puntuación: <span id="score">0</span></p>
+        </div>
+        <canvas id="game-canvas" width="500" height="500"></canvas>
+        <div class="controls">
+            <button id="start-button">Iniciar Juego</button>
+            <button id="pause-button">Pausar</button>
+            <button id="restart-button">Reiniciar</button>
+        </div>
+        <div class="audio-controls">
+            <p>Música de fondo:</p>
+            <button id="music-toggle">Cambiar música</button>
+            <span id="current-music">Música 1</span>
+        </div>
+        <div class="instructions">
+            <p>Usa las teclas de flechas para controlar la culebrita</p>
+        </div>
+    </div>
+    <audio id="background-sound-1" loop>
+        <source src="../sonido/sonido1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="background-sound-3" loop>
+        <source src="../sonido/sonido3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="eat-sound">
+        <source src="../sonido/sonido2.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="../snake.js"></script>
+</body>
+</html>
